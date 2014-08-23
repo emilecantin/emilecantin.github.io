@@ -1,0 +1,17 @@
+# Site settings
+title: Emile Cantin's Blog
+email: emile.cantin@gmail.com
+description: >
+  My name is Emile Cantin, and I'm a full-stack web developer. I've
+  decided to start a blog, so here it is! I will post various ramblings
+  here about what it's like to be a developer, and some tech tips. I
+  hope this will be enjoyable, for you as well as me!
+baseurl: ""
+url: "http://emilecantin.github.io"
+twitter_username: emilecantin
+github_username:  emilecantin
+
+# Build settings
+paginate: 25
+markdown: kramdown
+highlighter: pygments
