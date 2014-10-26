@@ -78,7 +78,7 @@ $(function () {
 The problem
 -----------
 
-So far, so good. But then, you add a date format for the labels, because your client doesn't like Highcharts':
+So far, so good. But then, you add a date format for the labels, because your client doesn't like Highcharts' default format:
 
 {% highlight javascript %}
     // ...
@@ -163,10 +163,16 @@ $(function () {
 });
 </script>
 
-Well, as i've found, this is actually two different issues:
+Explanation
+-----------
+
+Well, as i've found, there are actually two different issues:
 
 1. There is an offset between the point on the chart and the tick on the axis (as evidenced by the first chart).
 2. The labels repeat themselves because Highcharts falls on a smaller scales (days, not months), and your date format hides this from you.
+
+Problem #1
+----------
 
 Let me illustrate point 1 with a more obvious example:
 
@@ -260,6 +266,9 @@ $(function () {
 });
 </script>
 
+Problem #2
+----------
+
 Now, on to issue #2. As before, let's have an example to better illustrate the issue:
 
 <div id="container-repeatingdates-days" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -333,6 +342,10 @@ $(function () {
 });
 </script>
 
+Conclusion
+----------
+
+Highcharts is a very powerful library, but it can be hard sometimes to get it to do exactly what you want. However, as we've demonstrated here, there's usually a way. Feel free to tweet me any question.
 
 [highcharts]:                 http://www.highcharts.com/
 [highcharts-useUTC-doc]:      http://api.highcharts.com/highcharts#global.useUTC
