@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Highchart datetime axis formatting"
-date:   2014-10-08 21:15:20
+date:   2014-10-26 10:15:00
 categories: web highcharts
 ---
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
