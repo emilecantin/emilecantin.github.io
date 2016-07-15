@@ -13,6 +13,7 @@ layout: default
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-comments-link" href="{{ post.url | prepend: site.url }}#disqus_thread"></a>
         </h2>
       </li>
     {% endfor %}
@@ -21,3 +22,4 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+<script id="dsq-count-scr" src="//emilecantin-blog.disqus.com/count.js" async></script>
