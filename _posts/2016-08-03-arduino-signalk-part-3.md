@@ -83,4 +83,17 @@ To make systemd aware of our new unit, we can run `systemctl daemon-reload`, and
 
 I used the [Arch Linux wiki](https://wiki.archlinux.org/index.php/Systemd#Writing_unit_files) and the [systemd man page](https://www.freedesktop.org/software/systemd/man/systemd.unit.html) to learn how to do this. They're great sources of information, go check them out!
 
+**EDIT**: It has been brought to my attention that the `start-signalk.sh` script referenced above wasn't included nor explained. Let's fix that! It's a simple wrapper script that sets up some necessary environment variables, and starts the SignalK server with the proper parameters for my boat. Here it is:
+
+```bash
+#!/usr/bin/env bash
+
+export NVM_DIR="/root/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm, it's the same snippet you need to add to .bashrc to make it work
+
+cd /root/signalk-server-node
+
+bin/signalk-server -s settings/sunshine-daydream.json
+```
+
 At this point, we've got the SignalK server running automatically, it recognizes the Arduino when we plug it in, and we don't have to log in to our Raspberry Pi all the time. We're starting to have a solid setup! In the next part of the series, we'll add an instrument display, and we'll start customizing it.
