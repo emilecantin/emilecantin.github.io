@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Server-Side Rendering and Code Splitting with React-Router 4 and Webpack 2"
+description: "A relatively simple approach to an interesting challenge: Synchronous module resolution on the server, knowing which bundles were involved in the server render, and loading them all before the initial client render."
 categories: web react javascript
 ---
 
