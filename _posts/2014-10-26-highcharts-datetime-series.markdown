@@ -4,9 +4,9 @@ title:  "Highchart datetime axis formatting"
 date:   2014-10-26 10:15:00
 categories: web highcharts
 ---
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="http://momentjs.com/downloads/moment.js"></script>
-<script src="http://code.highcharts.com/4.0.3/highcharts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="https://code.highcharts.com/4.0.3/highcharts.js"></script>
 
 If you have worked with [Highcharts][highcharts], you know that it's sometimes difficult to find all the right incantations to get it to do your biding.
 
