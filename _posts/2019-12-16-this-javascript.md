@@ -46,11 +46,13 @@ Again, this is one of the main reasons why you'd use arrow functions, so it's no
 
 # Exception the third: strict mode
 
-Strict mode removes the roundabout equivalence I mentioned earlier with `doSomething()` and `window.doSomething()`. In the first case, `this` will be `undefined` and in the second case it'll still be what's before the dot, so `window`.
+This one is a little less obvious. Remember when I said that `doSomething()` and `window.doSomething()` were the same thing? Well, in strict mode that's not exactly the case anymore. After all, strict mode is supposed to fix a few weird parts of Javascript, and this special case actually makes a little more sense in strict mode:
+
+`doSomething()` doesn't have anything before the dot, so `this` is `undefined`. `window.doSomething()` still has `this` set to `window`.
 
 # Exception the fourth (and last): constructors
 
-This is the least surprising exceptions to practitioners of a more traditional object-oriented language. `this` inside a constructor (a function invoked with `new`) is the object you're creating.
+This is the least surprising exception to practitioners of a more traditional object-oriented language: `this` inside a constructor (a function invoked with `new`) is the object you're creating.
 
 # Event handlers
 
