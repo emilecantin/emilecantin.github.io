@@ -2,9 +2,9 @@
 layout: post
 title:  "`this` in Javascript: finally an explanation that makes sense"
 description: >
-  Never quite got "this" in Javascript? Or you get it, but you're not sure how to explain it
-  to other devs? Here is the explanation that will finally make it "click". The phrase
-  "execution context" only appears once, I promise.
+  Never quite got «this» in Javascript? Or you get it, but you're not sure how to explain it
+  to other devs? Here is the explanation that will finally make it «click». The phrase
+  «execution context» only appears once, I promise.
 categories: web javascript
 ---
 
