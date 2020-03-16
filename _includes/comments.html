@@ -1,21 +1,8 @@
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-const gitalk = new Gitalk({
-  clientID: '8e00051afe423c72f75b',
-  clientSecret: 'a2403b90f29333ad747b905254e9ea903c8241eb',
-  accessToken: 'c9bb1859b17952ebf7dfc2b7a97dcb25fb7e06bd',
-  repo: 'emilecantin.github.io',
-  owner: 'emilecantin',
-  admin: ['emilecantin'],
-  id: '{{page.id}}',
-  labels: ['comments'],
-  distractionFreeMode: true
-})
-
-gitalk.render('gitalk-container')
+<script src="https://utteranc.es/client.js"
+        repo="emilecantin/emilecantin.github.io"
+        issue-term="title"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
-
