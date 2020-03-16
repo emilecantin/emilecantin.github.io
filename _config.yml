@@ -16,4 +16,4 @@ paginate: 25
 markdown: kramdown
 highlighter: rouge
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
